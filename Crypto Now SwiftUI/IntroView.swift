@@ -36,7 +36,8 @@ struct IntroView: View {
                                     .cornerRadius(15)
                             }
                             .padding(.bottom, 100)
-                            NavigationLink("", destination: FollowCurrencyView(), isActive: $isShowFollowView)
+                            NavigationLink("", destination: FollowCurrencyView()
+                                .navigationBarBackButtonHidden(true), isActive: $isShowFollowView)
                                
            
                         }

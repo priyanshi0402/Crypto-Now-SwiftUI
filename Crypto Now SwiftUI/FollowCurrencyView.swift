@@ -10,6 +10,7 @@ import SwiftUI
 struct FollowCurrencyView: View {
     
     @StateObject fileprivate var viewModel = CurrencyViewModel()
+    @State private var isShowTabScreen = false
     
     init() {
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -31,7 +32,6 @@ struct FollowCurrencyView: View {
                         Spacer()
                         Button {
                             viewModel.toogleFollow(data: news)
-                            // news.isFollow = !news.isFollow
                         } label: {
                             Text(news.isFollow ? "Following" : "Follow")
                                 .frame(height: 30)
@@ -48,7 +48,7 @@ struct FollowCurrencyView: View {
                 .padding(.top, 10)
                 
                 Button {
-                    
+                    self.isShowTabScreen = true
                 } label: {
                     Text("Continue")
                         .frame(width: 300, height: 50)
@@ -56,10 +56,11 @@ struct FollowCurrencyView: View {
                         .foregroundColor(Color.white)
                         .cornerRadius(10)
                 }
+                NavigationLink("", destination: TabbarView(), isActive: $isShowTabScreen)
             }
             .background(Color("BgColor").edgesIgnoringSafeArea(.all))
             .navigationBarTitle("Follow Currency", displayMode: .inline)
-            .navigationBarHidden(true)
+//            .navigationBarHidden(true)
             .onAppear {
                 UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
                 
