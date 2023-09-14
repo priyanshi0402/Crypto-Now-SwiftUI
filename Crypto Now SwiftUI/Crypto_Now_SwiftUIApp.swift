@@ -11,7 +11,7 @@ import SwiftUI
 struct Crypto_Now_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IntroView()
         }
     }
 }
