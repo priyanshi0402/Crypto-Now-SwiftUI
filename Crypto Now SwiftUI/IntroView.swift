@@ -50,7 +50,7 @@ struct IntroView: View {
                 .indexViewStyle(.page(backgroundDisplayMode: .interactive))
                 .tabViewStyle(.page)
                 .onAppear {
-                    dotAppearance.currentPageIndicatorTintColor = .white
+                    dotAppearance.currentPageIndicatorTintColor = UIColor(named: "TextColor")
                     dotAppearance.pageIndicatorTintColor = .gray
                 }
                 
@@ -80,7 +80,7 @@ struct OnboardingView: View {
                 .font(.title)
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .foregroundColor(.white)
+                .foregroundColor(Color("TextColor"))
                 .padding(.leading)
             
             Image(imageName)

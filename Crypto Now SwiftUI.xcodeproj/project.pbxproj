@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5B25C1612AB344F5005D45EB /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1602AB344F5005D45EB /* TabbarView.swift */; };
 		5B25C1632AB34509005D45EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1622AB34508005D45EB /* HomeView.swift */; };
+		5B25C1652AB40DD1005D45EB /* CoinExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1642AB40DD1005D45EB /* CoinExchangeModel.swift */; };
+		5B25C1672AB40E12005D45EB /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */; };
+		5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1682AB40F37005D45EB /* NewsModel.swift */; };
+		5B25C16B2AB4105E005D45EB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C16A2AB4105E005D45EB /* NewsView.swift */; };
 		AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */; };
 		AF20BFBC2AB1A57800EBB410 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFBB2AB1A57800EBB410 /* CurrencyModel.swift */; };
 		AF20BFBF2AB1A5A400EBB410 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFBE2AB1A5A400EBB410 /* CurrencyViewModel.swift */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		5B25C1602AB344F5005D45EB /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		5B25C1622AB34508005D45EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B25C1642AB40DD1005D45EB /* CoinExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinExchangeModel.swift; sourceTree = "<group>"; };
+		5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
+		5B25C1682AB40F37005D45EB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		5B25C16A2AB4105E005D45EB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCurrencyView.swift; sourceTree = "<group>"; };
 		AF20BFBB2AB1A57800EBB410 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		AF20BFBE2AB1A5A400EBB410 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
@@ -48,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				AF20BFBB2AB1A57800EBB410 /* CurrencyModel.swift */,
+				5B25C1642AB40DD1005D45EB /* CoinExchangeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -56,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				AF20BFBE2AB1A5A400EBB410 /* CurrencyViewModel.swift */,
+				5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */,
+				5B25C1682AB40F37005D45EB /* NewsModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -87,6 +98,7 @@
 				AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */,
 				5B25C1602AB344F5005D45EB /* TabbarView.swift */,
 				5B25C1622AB34508005D45EB /* HomeView.swift */,
+				5B25C16A2AB4105E005D45EB /* NewsView.swift */,
 				AF4EFDE92AAE060200CA4A33 /* Assets.xcassets */,
 				AF4EFDEB2AAE060200CA4A33 /* Preview Content */,
 			);
@@ -174,9 +186,13 @@
 				AF20BFBC2AB1A57800EBB410 /* CurrencyModel.swift in Sources */,
 				5B25C1632AB34509005D45EB /* HomeView.swift in Sources */,
 				5B25C1612AB344F5005D45EB /* TabbarView.swift in Sources */,
+				5B25C1672AB40E12005D45EB /* CoinsViewModel.swift in Sources */,
 				AF20BFBF2AB1A5A400EBB410 /* CurrencyViewModel.swift in Sources */,
 				AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */,
+				5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */,
+				5B25C1652AB40DD1005D45EB /* CoinExchangeModel.swift in Sources */,
 				AF4EFDE82AAE060000CA4A33 /* ContentView.swift in Sources */,
+				5B25C16B2AB4105E005D45EB /* NewsView.swift in Sources */,
 				AF4EFDE62AAE060000CA4A33 /* Crypto_Now_SwiftUIApp.swift in Sources */,
 				AF4EFDF42AAE079E00CA4A33 /* IntroView.swift in Sources */,
 			);
@@ -313,8 +329,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,9 +340,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cryptonowswiftui.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -343,8 +363,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,9 +374,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cryptonowswiftui.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

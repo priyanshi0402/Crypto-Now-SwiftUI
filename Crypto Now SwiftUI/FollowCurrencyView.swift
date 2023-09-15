@@ -13,7 +13,7 @@ struct FollowCurrencyView: View {
     @State private var isShowTabScreen = false
     
     init() {
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(named: "TextColor") as Any]
     }
     
     var body: some View {
@@ -28,7 +28,7 @@ struct FollowCurrencyView: View {
                         }
                         .frame(width: 40, height: 40, alignment: .center)
                         Text(news.title)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color("TextColor"))
                         Spacer()
                         Button {
                             viewModel.toogleFollow(data: news)

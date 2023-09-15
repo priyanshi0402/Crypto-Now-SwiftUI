@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct TabbarView: View {
-    @State private var selection = 0 // Initialize with the default selected tab
+    @State private var selection = 0
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(named: "BgColor")
+        UITabBar.appearance().barTintColor = UIColor(named: "BgColor")
+    }
+
     var body: some View {
-        //        VStack {
         TabView(selection: $selection) {
             HomeView()
                 .tabItem {
@@ -19,7 +23,7 @@ struct TabbarView: View {
                     Text("Home")
                 }
                 .tag(0)
-            Text("Tab 2")
+            NewsView()
                 .tabItem {
                     Image(systemName: selection == 1 ? "newspaper.fill" : "newspaper")
                     Text("News")
@@ -38,12 +42,13 @@ struct TabbarView: View {
                 }
                 .tag(3)
         }
-        .background(Color("BgColor"))
+        
         .navigationBarHidden(true)
-        //        }
+        .ignoresSafeArea()
         
     }
 }
+
 
 
 struct TabbarView_Previews: PreviewProvider {
