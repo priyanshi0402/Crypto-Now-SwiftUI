@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct NewsModel: Codable {
     let status: String
     let totalResults: Int
     let articles: [Article]
@@ -16,13 +16,14 @@ struct Welcome: Codable {
 
 // MARK: - Article
 struct Article: Codable {
+//    var id: String = UUID().uuidString
     let source: Source
     let author: String?
     let title: String
     let description: String?
     let url: String
     let urlToImage: String?
-    let publishedAt: Date
+    let publishedAt: String?
     let content: String?
 }
 

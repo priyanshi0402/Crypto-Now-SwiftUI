@@ -13,14 +13,13 @@ struct FollowCurrencyView: View {
     @State private var isShowTabScreen = false
     
     init() {
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(named: "TextColor") as Any]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(named: Colors.textColor) as Any]
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                List(
-                    viewModel.followsData, id: \.newsId) { news in
+                List(viewModel.followsData, id: \.newsId) { news in
                     HStack {
                         VStack {
                             Image(news.image)
@@ -28,7 +27,7 @@ struct FollowCurrencyView: View {
                         }
                         .frame(width: 40, height: 40, alignment: .center)
                         Text(news.title)
-                            .foregroundColor(Color("TextColor"))
+                            .foregroundColor(Color(Colors.textColor))
                         Spacer()
                         Button {
                             viewModel.toogleFollow(data: news)
@@ -41,7 +40,7 @@ struct FollowCurrencyView: View {
                                 .foregroundColor(Color.white)
                         }
                     }
-                    .listRowBackground(Color("BgColor"))
+                    .listRowBackground(Color(Colors.bgColor))
                     
                 }
                 .listStyle(.plain)
@@ -58,7 +57,7 @@ struct FollowCurrencyView: View {
                 }
                 NavigationLink("", destination: TabbarView(), isActive: $isShowTabScreen)
             }
-            .background(Color("BgColor").edgesIgnoringSafeArea(.all))
+            .background(Color(Colors.bgColor).edgesIgnoringSafeArea(.all))
             .navigationBarTitle("Follow Currency", displayMode: .inline)
 //            .navigationBarHidden(true)
             .onAppear {

@@ -6,26 +6,20 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct NewsView: View {
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor(named: Colors.bgColor)
+    }
+    
+    @ObservedObject private var articals = NewsViewModel()
     
     var body: some View {
-        List {
-            NewsCellView()
-                .listRowBackground(Color("BgColor"))
-            NewsCellView()
-                .listRowBackground(Color("BgColor"))
-            NewsCellView()
-                .listRowBackground(Color("BgColor"))
-            NewsCellView()
-                .listRowBackground(Color("BgColor"))
-            NewsCellView()
-                .listRowBackground(Color("BgColor"))
-            NewsCellView()
-                .listRowBackground(Color("BgColor"))
+        NavigationView {
+            NewsListView(news: articals.news)
+                .navigationTitle("News")
         }
-        .background(Color("BgColor"))
-        .listStyle(.plain)
     }
 }
 
@@ -36,45 +30,45 @@ struct NewsView_Previews: PreviewProvider {
 }
 
 struct NewsCellView: View {
+    var news: Article
     var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    Image("test_image")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .cornerRadius(12)
-                        .padding(.top, 10)
-                    Spacer()
-                }
-                
-                VStack(spacing: 8) {
-                    Text("PM Modi's MP Visit LIVE: PM Modi to unveil development projects in Madhya Pradesh and Chhattisgarh, ahead of upcoming elections - Moneycontrol")
-                        .font(.headline)
-                        .lineLimit(2)
-                    Text("2023 Tata Nexon Facelift Launch LIVE: As part of TATA.ev's rebranding efforts, the 2023 Tata Nexon EV is now presented with the stylized name &quot;Nexon.ev.&quot; Stay tuned for more updates.")
-                        .font(.subheadline)
+        HStack(spacing: 10) {
+            VStack {
+                WebImage(url: URL(string: news.urlToImage ?? ""))
+                    .resizable()
+                    .placeholder(Image("test_image"))
+                    .indicator(.activity)
+                    .transition(.fade(duration: 0.5))
+                    .frame(width: 80, height: 80)
+                    .cornerRadius(12)
+                    .padding(.top, 10)
+                Spacer()
+            }
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text(news.title)
+                    .font(.headline)
+                    .lineLimit(2)
+                Text(news.description ?? "")
+                    .font(.subheadline)
+                    .lineLimit(3)
+                    .foregroundColor(Color(Colors.secondTextColor))
+                HStack {
+                    let date = convertStringToDate(str: news.publishedAt ?? "")
+                    Text("~ \(news.author ?? news.source.name)")
+                        .font(.caption)
                         .lineLimit(3)
-                        .foregroundColor(Color("SecondTextColor"))
-                    HStack {
-                        let date = convertStringToDate(str: "2023-09-14T03:03:53Z")
-                        Text("~ PINKVILLA")
-                            .font(.caption)
-                            .lineLimit(3)
-                            .foregroundColor(Color("SubTextColor"))
-                        Spacer()
-                        Text(date?.timeAgoDisplay() ?? "2023-09-14T03:03:53Z")
-                            .font(.caption2)
-                            .lineLimit(3)
-                            .foregroundColor(Color("SubTextColor"))
-                    }
-                    
+                        .foregroundColor(Color(Colors.subTextColor))
+                    Spacer()
+                    Text(date?.timeAgoDisplay() ?? news.publishedAt ?? "")
+                        .font(.caption2)
+                        .lineLimit(3)
+                        .foregroundColor(Color(Colors.subTextColor))
                 }
                 
             }
             
         }
-//        .background(Color("BgColor"))
     }
 }
 

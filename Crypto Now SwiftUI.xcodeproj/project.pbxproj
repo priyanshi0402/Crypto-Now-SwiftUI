@@ -13,6 +13,12 @@
 		5B25C1672AB40E12005D45EB /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */; };
 		5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1682AB40F37005D45EB /* NewsModel.swift */; };
 		5B25C16B2AB4105E005D45EB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C16A2AB4105E005D45EB /* NewsView.swift */; };
+		5B25FE2B2AB43B57009B602B /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FE2A2AB43B57009B602B /* NewsViewModel.swift */; };
+		5B25FE2E2AB457CF009B602B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5B25FE2D2AB457CF009B602B /* SDWebImageSwiftUI */; };
+		5B25FE312AB4A147009B602B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FE302AB4A147009B602B /* Colors.swift */; };
+		5B25FE332AB4A4FB009B602B /* NewsCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FE322AB4A4FB009B602B /* NewsCategoryView.swift */; };
+		5B8EC0782AB5638A00375381 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EC0772AB5638A00375381 /* NewsListView.swift */; };
+		5B93EEC42AB4A94F0042F264 /* Enums+Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */; };
 		AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */; };
 		AF20BFBC2AB1A57800EBB410 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFBB2AB1A57800EBB410 /* CurrencyModel.swift */; };
 		AF20BFBF2AB1A5A400EBB410 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFBE2AB1A5A400EBB410 /* CurrencyViewModel.swift */; };
@@ -30,6 +36,11 @@
 		5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
 		5B25C1682AB40F37005D45EB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		5B25C16A2AB4105E005D45EB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		5B25FE2A2AB43B57009B602B /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		5B25FE302AB4A147009B602B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5B25FE322AB4A4FB009B602B /* NewsCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCategoryView.swift; sourceTree = "<group>"; };
+		5B8EC0772AB5638A00375381 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums+Kit.swift"; sourceTree = "<group>"; };
 		AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCurrencyView.swift; sourceTree = "<group>"; };
 		AF20BFBB2AB1A57800EBB410 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		AF20BFBE2AB1A5A400EBB410 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
@@ -46,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B25FE2E2AB457CF009B602B /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B25FE2F2AB4A13A009B602B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B25FE302AB4A147009B602B /* Colors.swift */,
+				5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AF20BFBA2AB1A56100EBB410 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AF20BFBB2AB1A57800EBB410 /* CurrencyModel.swift */,
 				5B25C1642AB40DD1005D45EB /* CoinExchangeModel.swift */,
+				5B25C1682AB40F37005D45EB /* NewsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -66,7 +88,7 @@
 			children = (
 				AF20BFBE2AB1A5A400EBB410 /* CurrencyViewModel.swift */,
 				5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */,
-				5B25C1682AB40F37005D45EB /* NewsModel.swift */,
+				5B25FE2A2AB43B57009B602B /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -90,6 +112,7 @@
 		AF4EFDE42AAE060000CA4A33 /* Crypto Now SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5B25FE2F2AB4A13A009B602B /* Utils */,
 				AF20BFBD2AB1A57F00EBB410 /* ViewModel */,
 				AF20BFBA2AB1A56100EBB410 /* Model */,
 				AF4EFDE52AAE060000CA4A33 /* Crypto_Now_SwiftUIApp.swift */,
@@ -99,6 +122,8 @@
 				5B25C1602AB344F5005D45EB /* TabbarView.swift */,
 				5B25C1622AB34508005D45EB /* HomeView.swift */,
 				5B25C16A2AB4105E005D45EB /* NewsView.swift */,
+				5B8EC0772AB5638A00375381 /* NewsListView.swift */,
+				5B25FE322AB4A4FB009B602B /* NewsCategoryView.swift */,
 				AF4EFDE92AAE060200CA4A33 /* Assets.xcassets */,
 				AF4EFDEB2AAE060200CA4A33 /* Preview Content */,
 			);
@@ -129,6 +154,9 @@
 			dependencies = (
 			);
 			name = "Crypto Now SwiftUI";
+			packageProductDependencies = (
+				5B25FE2D2AB457CF009B602B /* SDWebImageSwiftUI */,
+			);
 			productName = "Crypto Now SwiftUI";
 			productReference = AF4EFDE22AAE060000CA4A33 /* Crypto Now SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +185,9 @@
 				Base,
 			);
 			mainGroup = AF4EFDD92AAE060000CA4A33;
+			packageReferences = (
+				5B25FE2C2AB457CF009B602B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = AF4EFDE32AAE060000CA4A33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,14 +217,19 @@
 				AF20BFBC2AB1A57800EBB410 /* CurrencyModel.swift in Sources */,
 				5B25C1632AB34509005D45EB /* HomeView.swift in Sources */,
 				5B25C1612AB344F5005D45EB /* TabbarView.swift in Sources */,
+				5B25FE312AB4A147009B602B /* Colors.swift in Sources */,
 				5B25C1672AB40E12005D45EB /* CoinsViewModel.swift in Sources */,
+				5B93EEC42AB4A94F0042F264 /* Enums+Kit.swift in Sources */,
 				AF20BFBF2AB1A5A400EBB410 /* CurrencyViewModel.swift in Sources */,
+				5B25FE332AB4A4FB009B602B /* NewsCategoryView.swift in Sources */,
 				AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */,
 				5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */,
 				5B25C1652AB40DD1005D45EB /* CoinExchangeModel.swift in Sources */,
 				AF4EFDE82AAE060000CA4A33 /* ContentView.swift in Sources */,
 				5B25C16B2AB4105E005D45EB /* NewsView.swift in Sources */,
+				5B25FE2B2AB43B57009B602B /* NewsViewModel.swift in Sources */,
 				AF4EFDE62AAE060000CA4A33 /* Crypto_Now_SwiftUIApp.swift in Sources */,
+				5B8EC0782AB5638A00375381 /* NewsListView.swift in Sources */,
 				AF4EFDF42AAE079E00CA4A33 /* IntroView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +441,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B25FE2C2AB457CF009B602B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B25FE2D2AB457CF009B602B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B25FE2C2AB457CF009B602B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF4EFDDA2AAE060000CA4A33 /* Project object */;
 }

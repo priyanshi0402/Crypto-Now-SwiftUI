@@ -45,12 +45,12 @@ struct IntroView: View {
                         
                     }
                 }
-                .background(Color("BgColor"))
+                .background(Color(Colors.bgColor))
                 .animation(.easeInOut, value: currentPage)
                 .indexViewStyle(.page(backgroundDisplayMode: .interactive))
                 .tabViewStyle(.page)
                 .onAppear {
-                    dotAppearance.currentPageIndicatorTintColor = UIColor(named: "TextColor")
+                    dotAppearance.currentPageIndicatorTintColor = UIColor(named: Colors.textColor)
                     dotAppearance.pageIndicatorTintColor = .gray
                 }
                 
@@ -80,7 +80,7 @@ struct OnboardingView: View {
                 .font(.title)
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .foregroundColor(Color("TextColor"))
+                .foregroundColor(Color(Colors.textColor))
                 .padding(.leading)
             
             Image(imageName)
@@ -93,41 +93,6 @@ struct OnboardingView: View {
         }
         .padding(.top)
        
-    }
-    
-}
-
-enum IntroOption: String, CaseIterable, Identifiable {
-    case first = "Boost your Crypto related decision"
-    case second = "Discover and monitor cryptocurrency related news worldwide"
-    case third = "Get the Crypto data within minutes after it is published"
-    
-    var id: String { rawValue }
-    
-    var title: String {
-        return rawValue
-    }
-    
-    var image: String {
-        switch self {
-        case .first:
-            return "intro_1"
-        case .second:
-            return "intro_2"
-        case .third:
-            return "intro_3"
-        }
-    }
-    
-    var tag: Int {
-        switch self {
-        case .first:
-            return 0
-        case .second:
-            return 1
-        case .third:
-            return 2
-        }
     }
     
 }

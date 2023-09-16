@@ -12,24 +12,24 @@ struct HomeView: View {
     @ObservedObject var coinModel = CoinsViewModel()
     
     init() {
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(named: "TextColor") as Any]
-        UINavigationBar.appearance().backgroundColor = UIColor(named: "BgColor")
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(named: Colors.textColor) as Any]
+        UINavigationBar.appearance().backgroundColor = UIColor(named: Colors.bgColor)
     }
     
     var body: some View {
-            NavigationView { // Make sure your ContentView is wrapped in a NavigationView
-                ScrollView() {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(minimum: 0, maximum: .infinity), spacing: 15), count: 2)) {
-                        ForEach(coinModel.coinData, id: \.market) { coin in
-                            CurrencyRateCell(coin: coin)
-                        }
+        NavigationView { 
+            ScrollView() {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible(minimum: 0, maximum: .infinity), spacing: 15), count: 2)) {
+                    ForEach(coinModel.coinData, id: \.market) { coin in
+                        CurrencyRateCell(coin: coin)
                     }
                 }
-                .padding([.trailing, .leading], 15)
-                .background(Color("BgColor"))
-                .navigationTitle("Currency Rate")
             }
+            .padding([.trailing, .leading], 15)
+            .background(Color(Colors.bgColor))
+            .navigationTitle("Currency Rate")
         }
+    }
 }
 
 struct HomeVC_Previews: PreviewProvider {
@@ -63,10 +63,10 @@ struct CurrencyRateCell: View {
                     Text(coin.change_24_hour ?? "")
                         .lineLimit(1)
                         .padding(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
-                        .background((change_24_hour.contains("-") ? Color("Red") : Color("Green")).opacity(0.50))
+                        .background((change_24_hour.contains("-") ? Color(Colors.redColor) : Color(Colors.greenColor)).opacity(0.50))
                         .cornerRadius(15)
                     Image(systemName: change_24_hour.contains("-") ? "arrow.up.right.circle.fill" : "arrow.down.right.circle.fill")
-                        .foregroundColor(change_24_hour.contains("-") ? Color("Red") : Color("Green") )
+                        .foregroundColor(change_24_hour.contains("-") ? Color(Colors.redColor) : Color(Colors.greenColor) )
                     Spacer()
                 }
                 HStack {
@@ -78,7 +78,7 @@ struct CurrencyRateCell: View {
             }
             .padding(16)
         }
-        .background((change_24_hour.contains("-") ? Color("Red") : Color("Green")).opacity(0.20))
+        .background((change_24_hour.contains("-") ? Color(Colors.redColor) : Color(Colors.greenColor)).opacity(0.20))
         .cornerRadius(12)
         .padding(.bottom, 10)
         

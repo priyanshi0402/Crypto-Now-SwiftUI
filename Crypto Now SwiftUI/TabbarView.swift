@@ -11,8 +11,8 @@ struct TabbarView: View {
     @State private var selection = 0
     
     init() {
-        UITabBar.appearance().backgroundColor = UIColor(named: "BgColor")
-        UITabBar.appearance().barTintColor = UIColor(named: "BgColor")
+        UITabBar.appearance().backgroundColor = UIColor(named: Colors.bgColor)
+        UITabBar.appearance().barTintColor = UIColor(named: Colors.bgColor)
     }
 
     var body: some View {
@@ -29,7 +29,7 @@ struct TabbarView: View {
                     Text("News")
                 }
                 .tag(1)
-            Text("Tab 3")
+            NewsCategoryView()
                 .tabItem {
                     Image(systemName: selection == 2 ? "doc.append.fill.rtl" : "doc.append.rtl")
                     Text("Feed")

@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             FollowCurrencyView()
         }
-        .background(Color("BgColor"))
+        .background(Color(Colors.bgColor))
 //        .padding()
     }
 }
