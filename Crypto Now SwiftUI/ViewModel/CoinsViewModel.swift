@@ -20,7 +20,7 @@ class CoinsViewModel: ObservableObject {
         do {
             let data = try await APIManager.shared.fetchDatas(from: "https://api.coindcx.com/exchange/ticker", responseType: [CoinExchangeResponse].self)
             DispatchQueue.main.async {
-                self.coinData = Array(data.prefix(20))
+                self.coinData = data
             }
         } catch {
             print(error)
