@@ -26,6 +26,7 @@
 		5B8D66982AB7149500B91E97 /* News_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */; };
 		5B8D66992AB7149500B91E97 /* News_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */; };
 		5B8D669C2AB7149500B91E97 /* News WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B8D66872AB7149300B91E97 /* News WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B8D66A32AB8585700B91E97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66A22AB8585700B91E97 /* Network.swift */; };
 		5B8EC0782AB5638A00375381 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EC0772AB5638A00375381 /* NewsListView.swift */; };
 		5B93EEC42AB4A94F0042F264 /* Enums+Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */; };
 		AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */; };
@@ -81,6 +82,7 @@
 		5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = News_Widget.intentdefinition; sourceTree = "<group>"; };
 		5B8D66952AB7149500B91E97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B8D66972AB7149500B91E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8D66A22AB8585700B91E97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		5B8EC0772AB5638A00375381 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
 		5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums+Kit.swift"; sourceTree = "<group>"; };
 		AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCurrencyView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = "News Widget";
 			sourceTree = "<group>";
 		};
+		5B8D66A12AB8584C00B91E97 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D66A22AB8585700B91E97 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		AF20BFBA2AB1A56100EBB410 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +198,7 @@
 		AF4EFDE42AAE060000CA4A33 /* Crypto Now SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				5B8D66A12AB8584C00B91E97 /* Network */,
 				5B25FE2F2AB4A13A009B602B /* Utils */,
 				AF20BFBD2AB1A57F00EBB410 /* ViewModel */,
 				AF20BFBA2AB1A56100EBB410 /* Model */,
@@ -344,6 +355,7 @@
 				AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */,
 				5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */,
 				5B25C1652AB40DD1005D45EB /* CoinExchangeModel.swift in Sources */,
+				5B8D66A32AB8585700B91E97 /* Network.swift in Sources */,
 				AF4EFDE82AAE060000CA4A33 /* ContentView.swift in Sources */,
 				5B25C16B2AB4105E005D45EB /* NewsSourceView.swift in Sources */,
 				5B25FE2B2AB43B57009B602B /* NewsViewModel.swift in Sources */,

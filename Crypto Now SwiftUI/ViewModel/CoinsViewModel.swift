@@ -9,6 +9,7 @@ import Foundation
 
 class CoinsViewModel: ObservableObject {
     @Published var coinData: [CoinExchangeResponse] = []
+    
     init() {
         Task {
             await fetchCoinData()
@@ -16,14 +17,10 @@ class CoinsViewModel: ObservableObject {
     }
     
     func fetchCoinData() async {
-        guard let url = URL(string: "https://api.coindcx.com/exchange/ticker") else {
-            return
-        }
         do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            let decodedResponse = try JSONDecoder().decode([CoinExchangeResponse].self, from: data)
+            let data = try await APIManager.shared.fetchDatas(from: "https://api.coindcx.com/exchange/ticker", responseType: [CoinExchangeResponse].self)
             DispatchQueue.main.async {
-                self.coinData = Array(decodedResponse.prefix(20))
+                self.coinData = Array(data.prefix(20))
             }
         } catch {
             print(error)
