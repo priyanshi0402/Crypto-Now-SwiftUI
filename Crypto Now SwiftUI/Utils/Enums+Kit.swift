@@ -77,19 +77,19 @@ enum NewsCategory: String, CaseIterable, Identifiable {
     var image: String {
         switch self {
         case .business:
-            return "briefcase.fill"
+            return "💼"
         case .entertainment:
-            return "tv.fill"
+            return "🎥"
         case .general:
-            return "heart.text.square.fill"
+            return "📚"
         case .health:
-            return "stethoscope"
+            return "🩺"
         case .science:
-            return "flame.fill"
+            return "🚀"
         case .sports:
-            return "sportscourt.fill"
+            return "🏀"
         case .technology:
-            return "laptopcomputer"
+            return "👩🏻‍💻"
 //        case .all:
 //            return "newspaper.fill"
         }

@@ -12,11 +12,20 @@
 		5B25C1652AB40DD1005D45EB /* CoinExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1642AB40DD1005D45EB /* CoinExchangeModel.swift */; };
 		5B25C1672AB40E12005D45EB /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */; };
 		5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C1682AB40F37005D45EB /* NewsModel.swift */; };
-		5B25C16B2AB4105E005D45EB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C16A2AB4105E005D45EB /* NewsView.swift */; };
+		5B25C16B2AB4105E005D45EB /* NewsSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25C16A2AB4105E005D45EB /* NewsSourceView.swift */; };
 		5B25FE2B2AB43B57009B602B /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FE2A2AB43B57009B602B /* NewsViewModel.swift */; };
 		5B25FE2E2AB457CF009B602B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5B25FE2D2AB457CF009B602B /* SDWebImageSwiftUI */; };
 		5B25FE312AB4A147009B602B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FE302AB4A147009B602B /* Colors.swift */; };
 		5B25FE332AB4A4FB009B602B /* NewsCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FE322AB4A4FB009B602B /* NewsCategoryView.swift */; };
+		5B8D668A2AB7149400B91E97 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D66892AB7149300B91E97 /* WidgetKit.framework */; };
+		5B8D668C2AB7149400B91E97 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8D668B2AB7149400B91E97 /* SwiftUI.framework */; };
+		5B8D668F2AB7149400B91E97 /* News_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D668E2AB7149400B91E97 /* News_WidgetBundle.swift */; };
+		5B8D66912AB7149400B91E97 /* News_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66902AB7149400B91E97 /* News_WidgetLiveActivity.swift */; };
+		5B8D66932AB7149400B91E97 /* News_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66922AB7149400B91E97 /* News_Widget.swift */; };
+		5B8D66962AB7149500B91E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D66952AB7149500B91E97 /* Assets.xcassets */; };
+		5B8D66982AB7149500B91E97 /* News_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */; };
+		5B8D66992AB7149500B91E97 /* News_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */; };
+		5B8D669C2AB7149500B91E97 /* News WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B8D66872AB7149300B91E97 /* News WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B8EC0782AB5638A00375381 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EC0772AB5638A00375381 /* NewsListView.swift */; };
 		5B93EEC42AB4A94F0042F264 /* Enums+Kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */; };
 		AF20BFB92AB0C2C800EBB410 /* FollowCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */; };
@@ -29,16 +38,49 @@
 		AF4EFDF42AAE079E00CA4A33 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EFDF32AAE079E00CA4A33 /* IntroView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B8D669A2AB7149500B91E97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4EFDDA2AAE060000CA4A33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B8D66862AB7149300B91E97;
+			remoteInfo = "News WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B8D669D2AB7149600B91E97 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B8D669C2AB7149500B91E97 /* News WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5B25C1602AB344F5005D45EB /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		5B25C1622AB34508005D45EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5B25C1642AB40DD1005D45EB /* CoinExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinExchangeModel.swift; sourceTree = "<group>"; };
 		5B25C1662AB40E12005D45EB /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
 		5B25C1682AB40F37005D45EB /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
-		5B25C16A2AB4105E005D45EB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		5B25C16A2AB4105E005D45EB /* NewsSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSourceView.swift; sourceTree = "<group>"; };
 		5B25FE2A2AB43B57009B602B /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		5B25FE302AB4A147009B602B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5B25FE322AB4A4FB009B602B /* NewsCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCategoryView.swift; sourceTree = "<group>"; };
+		5B8D66872AB7149300B91E97 /* News WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "News WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8D66892AB7149300B91E97 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5B8D668B2AB7149400B91E97 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5B8D668E2AB7149400B91E97 /* News_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_WidgetBundle.swift; sourceTree = "<group>"; };
+		5B8D66902AB7149400B91E97 /* News_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		5B8D66922AB7149400B91E97 /* News_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_Widget.swift; sourceTree = "<group>"; };
+		5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = News_Widget.intentdefinition; sourceTree = "<group>"; };
+		5B8D66952AB7149500B91E97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B8D66972AB7149500B91E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B8EC0772AB5638A00375381 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
 		5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enums+Kit.swift"; sourceTree = "<group>"; };
 		AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowCurrencyView.swift; sourceTree = "<group>"; };
@@ -53,6 +95,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B8D66842AB7149300B91E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8D668C2AB7149400B91E97 /* SwiftUI.framework in Frameworks */,
+				5B8D668A2AB7149400B91E97 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF4EFDDF2AAE060000CA4A33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +122,28 @@
 				5B93EEC32AB4A94F0042F264 /* Enums+Kit.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B8D66882AB7149300B91E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D66892AB7149300B91E97 /* WidgetKit.framework */,
+				5B8D668B2AB7149400B91E97 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B8D668D2AB7149400B91E97 /* News Widget */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D668E2AB7149400B91E97 /* News_WidgetBundle.swift */,
+				5B8D66902AB7149400B91E97 /* News_WidgetLiveActivity.swift */,
+				5B8D66922AB7149400B91E97 /* News_Widget.swift */,
+				5B8D66942AB7149400B91E97 /* News_Widget.intentdefinition */,
+				5B8D66952AB7149500B91E97 /* Assets.xcassets */,
+				5B8D66972AB7149500B91E97 /* Info.plist */,
+			);
+			path = "News Widget";
 			sourceTree = "<group>";
 		};
 		AF20BFBA2AB1A56100EBB410 /* Model */ = {
@@ -97,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				AF4EFDE42AAE060000CA4A33 /* Crypto Now SwiftUI */,
+				5B8D668D2AB7149400B91E97 /* News Widget */,
+				5B8D66882AB7149300B91E97 /* Frameworks */,
 				AF4EFDE32AAE060000CA4A33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				AF4EFDE22AAE060000CA4A33 /* Crypto Now SwiftUI.app */,
+				5B8D66872AB7149300B91E97 /* News WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +197,7 @@
 				AF20BFB82AB0C2C800EBB410 /* FollowCurrencyView.swift */,
 				5B25C1602AB344F5005D45EB /* TabbarView.swift */,
 				5B25C1622AB34508005D45EB /* HomeView.swift */,
-				5B25C16A2AB4105E005D45EB /* NewsView.swift */,
+				5B25C16A2AB4105E005D45EB /* NewsSourceView.swift */,
 				5B8EC0772AB5638A00375381 /* NewsListView.swift */,
 				5B25FE322AB4A4FB009B602B /* NewsCategoryView.swift */,
 				AF4EFDE92AAE060200CA4A33 /* Assets.xcassets */,
@@ -141,6 +217,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B8D66862AB7149300B91E97 /* News WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B8D66A02AB7149600B91E97 /* Build configuration list for PBXNativeTarget "News WidgetExtension" */;
+			buildPhases = (
+				5B8D66832AB7149300B91E97 /* Sources */,
+				5B8D66842AB7149300B91E97 /* Frameworks */,
+				5B8D66852AB7149300B91E97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "News WidgetExtension";
+			productName = "News WidgetExtension";
+			productReference = 5B8D66872AB7149300B91E97 /* News WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		AF4EFDE12AAE060000CA4A33 /* Crypto Now SwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4EFDF02AAE060200CA4A33 /* Build configuration list for PBXNativeTarget "Crypto Now SwiftUI" */;
@@ -148,10 +241,12 @@
 				AF4EFDDE2AAE060000CA4A33 /* Sources */,
 				AF4EFDDF2AAE060000CA4A33 /* Frameworks */,
 				AF4EFDE02AAE060000CA4A33 /* Resources */,
+				5B8D669D2AB7149600B91E97 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B8D669B2AB7149500B91E97 /* PBXTargetDependency */,
 			);
 			name = "Crypto Now SwiftUI";
 			packageProductDependencies = (
@@ -168,9 +263,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					5B8D66862AB7149300B91E97 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					AF4EFDE12AAE060000CA4A33 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -193,11 +291,20 @@
 			projectRoot = "";
 			targets = (
 				AF4EFDE12AAE060000CA4A33 /* Crypto Now SwiftUI */,
+				5B8D66862AB7149300B91E97 /* News WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B8D66852AB7149300B91E97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8D66962AB7149500B91E97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF4EFDE02AAE060000CA4A33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,11 +317,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B8D66832AB7149300B91E97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8D668F2AB7149400B91E97 /* News_WidgetBundle.swift in Sources */,
+				5B8D66982AB7149500B91E97 /* News_Widget.intentdefinition in Sources */,
+				5B8D66912AB7149400B91E97 /* News_WidgetLiveActivity.swift in Sources */,
+				5B8D66932AB7149400B91E97 /* News_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF4EFDDE2AAE060000CA4A33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF20BFBC2AB1A57800EBB410 /* CurrencyModel.swift in Sources */,
+				5B8D66992AB7149500B91E97 /* News_Widget.intentdefinition in Sources */,
 				5B25C1632AB34509005D45EB /* HomeView.swift in Sources */,
 				5B25C1612AB344F5005D45EB /* TabbarView.swift in Sources */,
 				5B25FE312AB4A147009B602B /* Colors.swift in Sources */,
@@ -226,7 +345,7 @@
 				5B25C1692AB40F37005D45EB /* NewsModel.swift in Sources */,
 				5B25C1652AB40DD1005D45EB /* CoinExchangeModel.swift in Sources */,
 				AF4EFDE82AAE060000CA4A33 /* ContentView.swift in Sources */,
-				5B25C16B2AB4105E005D45EB /* NewsView.swift in Sources */,
+				5B25C16B2AB4105E005D45EB /* NewsSourceView.swift in Sources */,
 				5B25FE2B2AB43B57009B602B /* NewsViewModel.swift in Sources */,
 				AF4EFDE62AAE060000CA4A33 /* Crypto_Now_SwiftUIApp.swift in Sources */,
 				5B8EC0782AB5638A00375381 /* NewsListView.swift in Sources */,
@@ -236,7 +355,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5B8D669B2AB7149500B91E97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B8D66862AB7149300B91E97 /* News WidgetExtension */;
+			targetProxy = 5B8D669A2AB7149500B91E97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5B8D669E2AB7149600B91E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T8ZX7X76S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "News Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "News Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptonowswiftui.iOS.News-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B8D669F2AB7149600B91E97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T8ZX7X76S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "News Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "News Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cryptonowswiftui.iOS.News-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AF4EFDEE2AAE060200CA4A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,6 +537,7 @@
 		AF4EFDF12AAE060200CA4A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +572,7 @@
 		AF4EFDF22AAE060200CA4A33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +607,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B8D66A02AB7149600B91E97 /* Build configuration list for PBXNativeTarget "News WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B8D669E2AB7149600B91E97 /* Debug */,
+				5B8D669F2AB7149600B91E97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF4EFDDD2AAE060000CA4A33 /* Build configuration list for PBXProject "Crypto Now SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

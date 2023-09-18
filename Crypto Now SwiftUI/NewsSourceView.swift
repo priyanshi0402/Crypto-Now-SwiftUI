@@ -1,5 +1,5 @@
 //
-//  NewsView.swift
+//  NewsSourceView.swift
 //  Crypto Now SwiftUI
 //
 //  Created by SARVADHI on 15/09/23.
@@ -8,16 +8,17 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct NewsView: View {
+struct NewsSourceView: View {
     init() {
         UINavigationBar.appearance().backgroundColor = UIColor(named: Colors.bgColor)
     }
-    
-    @ObservedObject private var articals = NewsViewModel()
-    
+        
     var body: some View {
         NavigationView {
-            NewsListView(news: articals.news)
+            VStack {
+                
+            }
+//            NewsListView(news: articals.news)
                 .navigationTitle("News")
         }
     }
@@ -25,7 +26,7 @@ struct NewsView: View {
 
 struct NewsView_Previews: PreviewProvider {
     static var previews: some View {
-        NewsView()
+        NewsSourceView()
     }
 }
 

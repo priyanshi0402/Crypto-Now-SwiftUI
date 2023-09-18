@@ -22,25 +22,22 @@ struct TabbarView: View {
                     Image(systemName: selection == 0 ? "house.fill" : "house")
                     Text("Home")
                 }
-                .tag(0)
-            NewsView()
-                .tabItem {
-                    Image(systemName: selection == 1 ? "newspaper.fill" : "newspaper")
-                    Text("News")
-                }
-                .tag(1)
             NewsCategoryView()
                 .tabItem {
-                    Image(systemName: selection == 2 ? "doc.append.fill.rtl" : "doc.append.rtl")
-                    Text("Feed")
+                    Image(systemName: "flame.fill")
+                    Text("Headlines")
                 }
-                .tag(2)
+            NewsSourceView()
+                .tabItem {
+                    Image(systemName: selection == 1 ? "newspaper.fill" : "newspaper")
+                    Text("News Source")
+                }
+           
             Text("Tab 4")
                 .tabItem {
                     Image(systemName: selection == 3 ? "gearshape.fill" : "gearshape")
                     Text("Settings")
                 }
-                .tag(3)
         }
         
         .navigationBarHidden(true)
